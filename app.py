@@ -181,5 +181,3 @@ if 'analysis_result' in st.session_state:
 else:
     if not uploaded_file:
         st.info("👋 請先上傳 PDF 檔案。")
-    elif not gemini_api_key:
-        st.warning("👉 請在左側輸入 Gemini API Key。")
