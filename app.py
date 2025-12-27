@@ -17,8 +17,7 @@ if os.path.exists(env_path):
     if not load_dotenv(dotenv_path=env_path, encoding="utf-8"):
         # If no keys loaded (or update fails), try UTF-16
         load_dotenv(dotenv_path=env_path, encoding="utf-16")
-else:
-    st.warning(f"⚠️ 找不到 .env 檔案，路徑: {env_path}")
+
 
 st.set_page_config(page_title="醫療文獻分析 (表格版)", layout="wide")
 
